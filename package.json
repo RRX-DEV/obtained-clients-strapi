@@ -1,6 +1,6 @@
 {
-  "name": "my-app-name",
-  "version": "0.1.0",
+  "name": "obtained-clients-strapi",
+  "version": "0.1.1",
   "private": true,
   "description": "A Strapi application",
   "scripts": {

@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_singles_team_members",
+  "info": {
+    "displayName": "Team Member",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Role": {
+      "type": "string",
+      "required": true
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "SocialLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "singles.member-social",
+      "required": false
+    }
+  }
+}

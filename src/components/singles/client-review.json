@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_singles_client_reviews",
+  "info": {
+    "displayName": "Client Review",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Review": {
+      "type": "text",
+      "required": true
+    },
+    "Rating": {
+      "type": "decimal",
+      "min": 1,
+      "max": 5,
+      "required": true
+    },
+    "AuthorName": {
+      "type": "string",
+      "required": true
+    },
+    "AuthorRole": {
+      "type": "string",
+      "required": false
+    },
+    "AuthorCompany": {
+      "type": "string",
+      "required": true
+    },
+    "AuthorImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    }
+  }
+}

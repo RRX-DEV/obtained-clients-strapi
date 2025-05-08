@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_components_timelines",
+  "info": {
+    "displayName": "Timeline"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Timeline": {
+      "type": "component",
+      "repeatable": true,
+      "component": "singles.timeline-item",
+      "required": true,
+      "min": 2,
+      "max": 4
+    }
+  }
+}

@@ -1,16 +1,15 @@
 {
-  "kind": "singleType",
-  "collectionName": "abouts",
+  "kind": "collectionType",
+  "collectionName": "services",
   "info": {
-    "singularName": "about",
-    "pluralName": "abouts",
-    "displayName": "About us",
-    "description": "Write about yourself and the content you create"
+    "singularName": "service",
+    "pluralName": "services",
+    "displayName": "Service",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
   "attributes": {
     "Title": {
       "type": "string",
@@ -21,12 +20,6 @@
     },
     "CTAButton": {
       "type": "string"
-    },
-    "Partners": {
-      "type": "component",
-      "repeatable": true,
-      "component": "singles.partner",
-      "required": false
     },
     "PageLayout": {
       "type": "dynamiczone",

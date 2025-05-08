@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_components_statistics",
+  "info": {
+    "displayName": "Statistics",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Subtitle": {
+      "type": "text"
+    },
+    "Statistics": {
+      "type": "component",
+      "repeatable": true,
+      "component": "singles.statistic",
+      "required": true,
+      "min": 4,
+      "max": 6
+    }
+  }
+}

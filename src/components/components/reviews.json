@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_components_reviews",
+  "info": {
+    "displayName": "Reviews"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "AverageRating": {
+      "type": "decimal",
+      "min": 1,
+      "max": 5,
+      "required": false
+    },
+    "Reviews": {
+      "type": "component",
+      "repeatable": true,
+      "component": "singles.client-review",
+      "required": true,
+      "min": 1
+    }
+  }
+}

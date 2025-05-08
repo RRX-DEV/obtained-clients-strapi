@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_components_group_topics",
+  "info": {
+    "displayName": "Group Topics"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Subtitle": {
+      "type": "text"
+    },
+    "Topics": {
+      "type": "component",
+      "repeatable": true,
+      "component": "singles.topic",
+      "min": 1,
+      "required": true
+    }
+  }
+}

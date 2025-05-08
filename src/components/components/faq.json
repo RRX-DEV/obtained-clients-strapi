@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_components_faqs",
+  "info": {
+    "displayName": "FAQ"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Subtitle": {
+      "type": "text"
+    },
+    "FAQs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "singles.faq",
+      "required": true,
+      "min": 1
+    }
+  }
+}

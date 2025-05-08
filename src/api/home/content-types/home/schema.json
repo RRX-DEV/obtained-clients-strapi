@@ -1,23 +1,22 @@
 {
   "kind": "singleType",
-  "collectionName": "abouts",
+  "collectionName": "homes",
   "info": {
-    "singularName": "about",
-    "pluralName": "abouts",
-    "displayName": "About us",
-    "description": "Write about yourself and the content you create"
+    "singularName": "home",
+    "pluralName": "homes",
+    "displayName": "Home",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
   "attributes": {
     "Title": {
       "type": "string",
       "required": true
     },
     "Subtitle": {
-      "type": "string"
+      "type": "text"
     },
     "CTAButton": {
       "type": "string"
@@ -31,18 +30,18 @@
     "PageLayout": {
       "type": "dynamiczone",
       "components": [
-        "components.timeline",
-        "components.tech-stack",
-        "components.team-cards",
         "components.tab-topics",
-        "components.statistics",
-        "components.reviews",
         "components.plans",
         "components.list-topics",
+        "components.timeline",
+        "components.tech-stack",
+        "components.statistics",
+        "components.reviews",
         "components.group-topics",
         "components.faq",
         "components.contact",
-        "components.card-topics"
+        "components.card-topics",
+        "components.team-cards"
       ],
       "required": true,
       "min": 1

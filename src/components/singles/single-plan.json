@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_singles_single_plans",
+  "info": {
+    "displayName": "Single Plan"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "singles.plan-feature",
+      "required": true,
+      "min": 1
+    },
+    "ButtonText": {
+      "type": "string"
+    }
+  }
+}

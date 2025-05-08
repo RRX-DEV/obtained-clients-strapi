@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_components_team_cards",
+  "info": {
+    "displayName": "Team Cards"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Members": {
+      "type": "component",
+      "repeatable": true,
+      "component": "singles.team-member",
+      "required": true,
+      "min": 1
+    }
+  }
+}

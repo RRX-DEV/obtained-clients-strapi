@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_components_plans",
+  "info": {
+    "displayName": "Plans"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Subtitle": {
+      "type": "text"
+    },
+    "Sidenote": {
+      "type": "text"
+    },
+    "Plans": {
+      "type": "component",
+      "repeatable": true,
+      "component": "singles.single-plan",
+      "required": true,
+      "min": 1
+    }
+  }
+}

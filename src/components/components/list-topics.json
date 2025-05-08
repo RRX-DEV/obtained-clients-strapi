@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_components_list_topics",
+  "info": {
+    "displayName": "List Topics"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Subtitle": {
+      "type": "text"
+    }
+  }
+}

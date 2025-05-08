@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_singles_faqs",
+  "info": {
+    "displayName": "FAQ"
+  },
+  "options": {},
+  "attributes": {
+    "Question": {
+      "type": "string",
+      "required": true
+    },
+    "Answer": {
+      "type": "text",
+      "required": true
+    },
+    "StartOpen": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_components_tech_stacks",
+  "info": {
+    "displayName": "Tech Stack"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Subtitle": {
+      "type": "text"
+    },
+    "Tech": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    }
+  }
+}

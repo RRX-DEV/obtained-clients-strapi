@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_singles_plan_features",
+  "info": {
+    "displayName": "Plan Feature"
+  },
+  "options": {},
+  "attributes": {
+    "Feature": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

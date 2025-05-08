@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_singles_member_socials",
+  "info": {
+    "displayName": "Member Social"
+  },
+  "options": {},
+  "attributes": {
+    "Platform": {
+      "type": "enumeration",
+      "enum": [
+        "LinkedIn",
+        "Email",
+        "Instagram",
+        "Facebook",
+        "Website",
+        "Phone"
+      ],
+      "required": true
+    },
+    "URL": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

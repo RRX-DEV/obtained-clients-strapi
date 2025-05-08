@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_singles_statistics",
+  "info": {
+    "displayName": "Statistic"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Value": {
+      "type": "decimal",
+      "required": true
+    },
+    "ValueType": {
+      "type": "enumeration",
+      "enum": [
+        "Number",
+        "Percentage"
+      ],
+      "default": "Number",
+      "required": true
+    }
+  }
+}
