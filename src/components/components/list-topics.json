@@ -1,7 +1,8 @@
 {
   "collectionName": "components_components_list_topics",
   "info": {
-    "displayName": "List Topics"
+    "displayName": "List Topics",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -11,6 +12,13 @@
     },
     "Subtitle": {
       "type": "text"
+    },
+    "Topics": {
+      "type": "component",
+      "repeatable": true,
+      "component": "singles.topic",
+      "required": true,
+      "min": 1
     }
   }
 }

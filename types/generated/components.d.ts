@@ -73,11 +73,20 @@ export interface ComponentsGroupTopics extends Struct.ComponentSchema {
 export interface ComponentsListTopics extends Struct.ComponentSchema {
   collectionName: 'components_components_list_topics';
   info: {
+    description: '';
     displayName: 'List Topics';
   };
   attributes: {
     Subtitle: Schema.Attribute.Text;
     Title: Schema.Attribute.String & Schema.Attribute.Required;
+    Topics: Schema.Attribute.Component<'singles.topic', true> &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetMinMax<
+        {
+          min: 1;
+        },
+        number
+      >;
   };
 }
 

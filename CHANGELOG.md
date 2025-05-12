@@ -5,6 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.3] - 2025-05-12
+
+### Added
+- Enhanced the List Topics component with repeatable Topic items:
+  - Added required Topics field to the List Topics component
+  - Configured minimum of 1 Topic item per List Topics component
+  - Topics field uses the singles.topic component structure
+- Updated TypeScript type definitions to reflect component changes
+
+### Changed
+- Improved component documentation with additional description fields
+- Enhanced type safety with proper Schema.Attribute definitions
+- Updated component structure for better content modeling
+
 ## [0.1.2] - 2025-05-12
 
 ### Added
