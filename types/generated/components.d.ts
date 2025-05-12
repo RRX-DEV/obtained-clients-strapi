@@ -151,11 +151,20 @@ export interface ComponentsStatistics extends Struct.ComponentSchema {
 export interface ComponentsTabTopics extends Struct.ComponentSchema {
   collectionName: 'components_components_tab_topics';
   info: {
+    description: '';
     displayName: 'Tab Topics';
   };
   attributes: {
     Subtitle: Schema.Attribute.Text;
     Title: Schema.Attribute.String & Schema.Attribute.Required;
+    Topics: Schema.Attribute.Component<'singles.topic', true> &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetMinMax<
+        {
+          min: 1;
+        },
+        number
+      >;
   };
 }
 

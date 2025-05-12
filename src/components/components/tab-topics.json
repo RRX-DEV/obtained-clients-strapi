@@ -1,7 +1,8 @@
 {
   "collectionName": "components_components_tab_topics",
   "info": {
-    "displayName": "Tab Topics"
+    "displayName": "Tab Topics",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -11,6 +12,13 @@
     },
     "Subtitle": {
       "type": "text"
+    },
+    "Topics": {
+      "type": "component",
+      "repeatable": true,
+      "component": "singles.topic",
+      "required": true,
+      "min": 1
     }
   }
 }

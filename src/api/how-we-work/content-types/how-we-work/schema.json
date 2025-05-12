@@ -1,0 +1,29 @@
+{
+  "kind": "singleType",
+  "collectionName": "how_we_works",
+  "info": {
+    "singularName": "how-we-work",
+    "pluralName": "how-we-works",
+    "displayName": "How we work",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}
