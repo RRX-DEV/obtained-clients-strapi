@@ -1,7 +1,8 @@
 {
   "collectionName": "components_components_large_maps",
   "info": {
-    "displayName": "Large Map"
+    "displayName": "Large Map",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -10,7 +11,7 @@
       "required": true
     },
     "Description": {
-      "type": "string"
+      "type": "text"
     }
   }
 }

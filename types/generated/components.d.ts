@@ -73,10 +73,11 @@ export interface ComponentsGroupTopics extends Struct.ComponentSchema {
 export interface ComponentsLargeMap extends Struct.ComponentSchema {
   collectionName: 'components_components_large_maps';
   info: {
+    description: '';
     displayName: 'Large Map';
   };
   attributes: {
-    Description: Schema.Attribute.String;
+    Description: Schema.Attribute.Text;
     Title: Schema.Attribute.String & Schema.Attribute.Required;
   };
 }

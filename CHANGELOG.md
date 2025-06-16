@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.6] - 2025-06-17
+
+### Added
+- Introduced new `Media Block` component for flexible media and content layouts, supporting images/files, position, and description.
+- Added `Media Block` to the `About` page's dynamic zone options.
+- Improved TypeScript component definitions to include the new `Media Block` and updated `Large Map` component with a description field.
+
+### Changed
+- Updated `Large Map` component: changed the `Description` attribute type from `string` to `text` for better content support.
+
 ## [0.1.5] - 2025-06-16
 
 ### Added

@@ -67,7 +67,8 @@
         "components.faq",
         "components.contact",
         "components.card-topics",
-        "components.large-map"
+        "components.large-map",
+        "components.media-block"
       ],
       "required": true,
       "min": 1,
