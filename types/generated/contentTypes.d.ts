@@ -411,6 +411,7 @@ export interface ApiAboutAbout extends Struct.SingleTypeSchema {
         'components.faq',
         'components.contact',
         'components.card-topics',
+        'components.large-map',
       ]
     > &
       Schema.Attribute.Required &

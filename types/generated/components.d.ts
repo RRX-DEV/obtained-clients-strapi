@@ -70,6 +70,17 @@ export interface ComponentsGroupTopics extends Struct.ComponentSchema {
   };
 }
 
+export interface ComponentsLargeMap extends Struct.ComponentSchema {
+  collectionName: 'components_components_large_maps';
+  info: {
+    displayName: 'Large Map';
+  };
+  attributes: {
+    Description: Schema.Attribute.String;
+    Title: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
 export interface ComponentsListTopics extends Struct.ComponentSchema {
   collectionName: 'components_components_list_topics';
   info: {
@@ -87,6 +98,21 @@ export interface ComponentsListTopics extends Struct.ComponentSchema {
         },
         number
       >;
+  };
+}
+
+export interface ComponentsMediaBlock extends Struct.ComponentSchema {
+  collectionName: 'components_components_media_blocks';
+  info: {
+    displayName: 'Media Block';
+  };
+  attributes: {
+    Description: Schema.Attribute.String;
+    Image: Schema.Attribute.Media<'images' | 'files'> &
+      Schema.Attribute.Required;
+    ImagePosition: Schema.Attribute.Enumeration<['Left', 'Right']> &
+      Schema.Attribute.Required;
+    Title: Schema.Attribute.String & Schema.Attribute.Required;
   };
 }
 
@@ -405,7 +431,9 @@ declare module '@strapi/strapi' {
       'components.contact': ComponentsContact;
       'components.faq': ComponentsFaq;
       'components.group-topics': ComponentsGroupTopics;
+      'components.large-map': ComponentsLargeMap;
       'components.list-topics': ComponentsListTopics;
+      'components.media-block': ComponentsMediaBlock;
       'components.plans': ComponentsPlans;
       'components.reviews': ComponentsReviews;
       'components.statistics': ComponentsStatistics;
