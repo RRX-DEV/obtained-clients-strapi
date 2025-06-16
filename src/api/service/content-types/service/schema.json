@@ -55,7 +55,9 @@
         "components.group-topics",
         "components.faq",
         "components.contact",
-        "components.card-topics"
+        "components.card-topics",
+        "components.media-block",
+        "components.large-map"
       ],
       "required": true,
       "min": 1,

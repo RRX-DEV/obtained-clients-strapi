@@ -527,6 +527,8 @@ export interface ApiHomeHome extends Struct.SingleTypeSchema {
         'components.contact',
         'components.card-topics',
         'components.team-cards',
+        'components.media-block',
+        'components.large-map',
       ]
     > &
       Schema.Attribute.Required &
@@ -651,6 +653,8 @@ export interface ApiServiceService extends Struct.CollectionTypeSchema {
         'components.faq',
         'components.contact',
         'components.card-topics',
+        'components.media-block',
+        'components.large-map',
       ]
     > &
       Schema.Attribute.Required &
