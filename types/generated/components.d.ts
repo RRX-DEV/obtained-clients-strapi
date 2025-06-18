@@ -32,6 +32,28 @@ export interface ComponentsContact extends Struct.ComponentSchema {
   };
 }
 
+export interface ComponentsDoubleScroll extends Struct.ComponentSchema {
+  collectionName: 'components_components_double_scrolls';
+  info: {
+    description: '';
+    displayName: 'Double Scroll';
+  };
+  attributes: {
+    FirstRow: Schema.Attribute.Component<'singles.topic', true> &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetMinMax<
+        {
+          min: 1;
+        },
+        number
+      >;
+    SecondRow: Schema.Attribute.Component<'singles.topic', true> &
+      Schema.Attribute.Required;
+    Subtitle: Schema.Attribute.Text;
+    Title: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
 export interface ComponentsFaq extends Struct.ComponentSchema {
   collectionName: 'components_components_faqs';
   info: {
@@ -430,6 +452,7 @@ declare module '@strapi/strapi' {
     export interface ComponentSchemas {
       'components.card-topics': ComponentsCardTopics;
       'components.contact': ComponentsContact;
+      'components.double-scroll': ComponentsDoubleScroll;
       'components.faq': ComponentsFaq;
       'components.group-topics': ComponentsGroupTopics;
       'components.large-map': ComponentsLargeMap;

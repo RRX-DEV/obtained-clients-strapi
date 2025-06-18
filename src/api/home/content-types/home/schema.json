@@ -68,7 +68,8 @@
         "components.card-topics",
         "components.team-cards",
         "components.media-block",
-        "components.large-map"
+        "components.large-map",
+        "components.double-scroll"
       ],
       "required": true,
       "min": 1,

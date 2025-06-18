@@ -529,6 +529,7 @@ export interface ApiHomeHome extends Struct.SingleTypeSchema {
         'components.team-cards',
         'components.media-block',
         'components.large-map',
+        'components.double-scroll',
       ]
     > &
       Schema.Attribute.Required &
@@ -655,6 +656,7 @@ export interface ApiServiceService extends Struct.CollectionTypeSchema {
         'components.card-topics',
         'components.media-block',
         'components.large-map',
+        'components.double-scroll',
       ]
     > &
       Schema.Attribute.Required &
