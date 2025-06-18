@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.9] - 2025-06-20
+
+### Added
+- Added a required `Color` field (enumeration: Purple, Green, Dark Purple, Blue, Red) to the Service content type for improved categorization and theming.
+- Updated TypeScript type definitions to include the new `Color` field in the Service schema.
+
 ## [0.1.8] - 2025-06-19
 
 ### Added

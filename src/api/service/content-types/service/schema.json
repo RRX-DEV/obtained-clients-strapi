@@ -73,6 +73,17 @@
       "repeatable": false,
       "component": "shared.seo",
       "required": true
+    },
+    "Color": {
+      "type": "enumeration",
+      "enum": [
+        "Purple",
+        "Green",
+        "Dark Purple",
+        "Blue",
+        "Red"
+      ],
+      "required": true
     }
   }
 }

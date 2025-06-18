@@ -626,6 +626,10 @@ export interface ApiServiceService extends Struct.CollectionTypeSchema {
     };
   };
   attributes: {
+    Color: Schema.Attribute.Enumeration<
+      ['Purple', 'Green', 'Dark Purple', 'Blue', 'Red']
+    > &
+      Schema.Attribute.Required;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
