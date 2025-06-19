@@ -68,7 +68,8 @@
         "components.contact",
         "components.card-topics",
         "components.large-map",
-        "components.media-block"
+        "components.media-block",
+        "components.double-scroll"
       ],
       "required": true,
       "min": 1,
