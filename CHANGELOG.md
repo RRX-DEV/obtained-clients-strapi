@@ -5,6 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.11] - 2025-06-22
+
+### Added
+- Introduced the new `Blog` single type with fields for Title, Subtitle, CTAButton, Partners, and a flexible `PageLayout` dynamic zone supporting multiple components.
+- Implemented core files for the Blog API:
+  - Controller (`src/api/blog/controllers/blog.js`)
+  - Service (`src/api/blog/services/blog.js`)
+  - Router (`src/api/blog/routes/blog.js`)
+- Updated TypeScript type definitions to include the new Blog single type.
+- Configured default email settings in `config/plugins.js` for outgoing emails.
+
+### Changed
+- Bumped project version to 0.1.11 in `package.json`.
+
 ## [0.1.10] - 2025-06-21
 
 ### Added

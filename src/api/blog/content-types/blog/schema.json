@@ -1,0 +1,51 @@
+{
+  "kind": "singleType",
+  "collectionName": "blogs",
+  "info": {
+    "singularName": "blog",
+    "pluralName": "blogs",
+    "displayName": "Blogs"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Subtitle": {
+      "type": "text"
+    },
+    "CTAButton": {
+      "type": "string"
+    },
+    "Partners": {
+      "type": "component",
+      "repeatable": true,
+      "component": "singles.partner"
+    },
+    "PageLayout": {
+      "type": "dynamiczone",
+      "components": [
+        "components.timeline",
+        "components.tech-stack",
+        "components.team-cards",
+        "components.tab-topics",
+        "components.statistics",
+        "components.reviews",
+        "components.plans",
+        "components.media-block",
+        "components.list-topics",
+        "components.large-map",
+        "components.group-topics",
+        "components.faq",
+        "components.double-scroll",
+        "components.contact",
+        "components.card-topics"
+      ],
+      "required": true,
+      "min": 1
+    }
+  }
+}
