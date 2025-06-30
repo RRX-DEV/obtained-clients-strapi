@@ -1,5 +1,15 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
+export interface ComponentsArticleGrid extends Struct.ComponentSchema {
+  collectionName: 'components_components_article_grids';
+  info: {
+    displayName: 'Article Grid';
+  };
+  attributes: {
+    Title: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
 export interface ComponentsCardTopics extends Struct.ComponentSchema {
   collectionName: 'components_components_card_topics';
   info: {
@@ -460,6 +470,7 @@ export interface SinglesTopic extends Struct.ComponentSchema {
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
+      'components.article-grid': ComponentsArticleGrid;
       'components.card-topics': ComponentsCardTopics;
       'components.contact': ComponentsContact;
       'components.double-scroll': ComponentsDoubleScroll;

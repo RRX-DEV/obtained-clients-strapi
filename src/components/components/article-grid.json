@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_components_article_grids",
+  "info": {
+    "displayName": "Article Grid"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

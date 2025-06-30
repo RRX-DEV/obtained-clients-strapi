@@ -69,7 +69,9 @@
         "components.card-topics",
         "components.large-map",
         "components.media-block",
-        "components.double-scroll"
+        "components.double-scroll",
+        "components.feature-article",
+        "components.article-grid"
       ],
       "required": true,
       "min": 1,

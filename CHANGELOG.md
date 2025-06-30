@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.13] - 2025-06-24
+
+### Added
+- Introduced new `Article Grid` component for displaying articles in a grid layout, with a required title field.
+- Added `Article Grid` and `Feature Article` components to the `PageLayout` dynamic zone options for the Home, About, and Blog content types.
+- Updated TypeScript type definitions to include the new `Article Grid` component and its integration in Home, About, and Blog schemas.
+
+### Changed
+- Bumped project version to
+
 ## [0.1.12] - 2025-06-23
 
 ### Added

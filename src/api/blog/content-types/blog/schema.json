@@ -4,7 +4,8 @@
   "info": {
     "singularName": "blog",
     "pluralName": "blogs",
-    "displayName": "Blogs"
+    "displayName": "Blogs",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -42,7 +43,9 @@
         "components.faq",
         "components.double-scroll",
         "components.contact",
-        "components.card-topics"
+        "components.card-topics",
+        "components.feature-article",
+        "components.article-grid"
       ],
       "required": true,
       "min": 1
