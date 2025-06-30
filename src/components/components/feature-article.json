@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_components_feature_articles",
+  "info": {
+    "displayName": "Feature Article"
+  },
+  "options": {},
+  "attributes": {
+    "Article": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::article.article"
+    }
+  }
+}

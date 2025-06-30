@@ -5,6 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.12] - 2025-06-23
+
+### Added
+- Introduced new `Article` collection type with fields for Title, Description, Image, and Body, supporting localization and draft/publish workflows.
+- Implemented core files for the Article API:
+  - Controller (`src/api/article/controllers/article.js`)
+  - Service (`src/api/article/services/article.js`)
+  - Router (`src/api/article/routes/article.js`)
+- Added the `Feature Article` component, allowing a one-to-one relation to an Article.
+- Updated TypeScript type definitions to include the new Article collection type and Feature Article component.
+
+### Changed
+- Bumped project version to
+
 ## [0.1.11] - 2025-06-22
 
 ### Added

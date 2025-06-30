@@ -73,6 +73,16 @@ export interface ComponentsFaq extends Struct.ComponentSchema {
   };
 }
 
+export interface ComponentsFeatureArticle extends Struct.ComponentSchema {
+  collectionName: 'components_components_feature_articles';
+  info: {
+    displayName: 'Feature Article';
+  };
+  attributes: {
+    Article: Schema.Attribute.Relation<'oneToOne', 'api::article.article'>;
+  };
+}
+
 export interface ComponentsGroupTopics extends Struct.ComponentSchema {
   collectionName: 'components_components_group_topics';
   info: {
@@ -454,6 +464,7 @@ declare module '@strapi/strapi' {
       'components.contact': ComponentsContact;
       'components.double-scroll': ComponentsDoubleScroll;
       'components.faq': ComponentsFaq;
+      'components.feature-article': ComponentsFeatureArticle;
       'components.group-topics': ComponentsGroupTopics;
       'components.large-map': ComponentsLargeMap;
       'components.list-topics': ComponentsListTopics;
