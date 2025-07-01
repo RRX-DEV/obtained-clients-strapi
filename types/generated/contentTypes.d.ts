@@ -778,6 +778,8 @@ export interface ApiServiceService extends Struct.CollectionTypeSchema {
         'components.media-block',
         'components.large-map',
         'components.double-scroll',
+        'components.feature-article',
+        'components.article-grid',
       ]
     > &
       Schema.Attribute.Required &

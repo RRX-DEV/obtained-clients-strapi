@@ -5,6 +5,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.14] - 2025-06-25
+
+### Added
+- Added `Feature Article` and `Article Grid` components to the `PageLayout` dynamic zone options for the Service content type.
+- Updated TypeScript type definitions to include `Feature Article` and `Article Grid` in the Service schema.
+
+### Changed
+- Bumped project version to 0.1.14 in `package.json`.
+
 ## [0.1.13] - 2025-06-24
 
 ### Added
