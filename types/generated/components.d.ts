@@ -147,10 +147,11 @@ export interface ComponentsListTopics extends Struct.ComponentSchema {
 export interface ComponentsMediaBlock extends Struct.ComponentSchema {
   collectionName: 'components_components_media_blocks';
   info: {
+    description: '';
     displayName: 'Media Block';
   };
   attributes: {
-    Description: Schema.Attribute.String;
+    Description: Schema.Attribute.Text;
     Image: Schema.Attribute.Media<'images' | 'files'> &
       Schema.Attribute.Required;
     ImagePosition: Schema.Attribute.Enumeration<['Left', 'Right']> &
