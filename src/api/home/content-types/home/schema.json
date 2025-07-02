@@ -71,7 +71,8 @@
         "components.large-map",
         "components.double-scroll",
         "components.feature-article",
-        "components.article-grid"
+        "components.article-grid",
+        "components.text-block"
       ],
       "required": true,
       "min": 1,

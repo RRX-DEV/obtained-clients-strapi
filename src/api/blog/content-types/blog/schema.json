@@ -45,7 +45,8 @@
         "components.contact",
         "components.card-topics",
         "components.feature-article",
-        "components.article-grid"
+        "components.article-grid",
+        "components.text-block"
       ],
       "required": true,
       "min": 1

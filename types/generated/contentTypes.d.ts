@@ -416,6 +416,7 @@ export interface ApiAboutAbout extends Struct.SingleTypeSchema {
         'components.double-scroll',
         'components.feature-article',
         'components.article-grid',
+        'components.text-block',
       ]
     > &
       Schema.Attribute.Required &
@@ -549,6 +550,7 @@ export interface ApiBlogBlog extends Struct.SingleTypeSchema {
         'components.card-topics',
         'components.feature-article',
         'components.article-grid',
+        'components.text-block',
       ]
     > &
       Schema.Attribute.Required &
@@ -647,6 +649,7 @@ export interface ApiHomeHome extends Struct.SingleTypeSchema {
         'components.double-scroll',
         'components.feature-article',
         'components.article-grid',
+        'components.text-block',
       ]
     > &
       Schema.Attribute.Required &
@@ -780,6 +783,7 @@ export interface ApiServiceService extends Struct.CollectionTypeSchema {
         'components.double-scroll',
         'components.feature-article',
         'components.article-grid',
+        'components.text-block',
       ]
     > &
       Schema.Attribute.Required &
