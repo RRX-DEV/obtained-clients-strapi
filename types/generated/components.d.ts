@@ -278,6 +278,17 @@ export interface ComponentsTechStack extends Struct.ComponentSchema {
   };
 }
 
+export interface ComponentsTextBlock extends Struct.ComponentSchema {
+  collectionName: 'components_components_text_blocks';
+  info: {
+    displayName: 'Text Block';
+  };
+  attributes: {
+    Description: Schema.Attribute.Text;
+    Title: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
 export interface ComponentsTimeline extends Struct.ComponentSchema {
   collectionName: 'components_components_timelines';
   info: {
@@ -487,6 +498,7 @@ declare module '@strapi/strapi' {
       'components.tab-topics': ComponentsTabTopics;
       'components.team-cards': ComponentsTeamCards;
       'components.tech-stack': ComponentsTechStack;
+      'components.text-block': ComponentsTextBlock;
       'components.timeline': ComponentsTimeline;
       'shared.seo': SharedSeo;
       'singles.client-review': SinglesClientReview;

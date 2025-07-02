@@ -15,6 +15,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Updated TypeScript type definitions to reflect the changes in the `Media Block` component.
 - Bumped project version to 0.1.15 in `package.json`.
 
+## [0.1.16] - 2025-06-27
+
+### Added
+- Upgraded `@strapi/plugin-graphql` to version 5.13.0 for improved GraphQL support and new features.
+
+### Changed
+- Bumped project version to 0.1.16
+
 ## [0.1.14] - 2025-06-25
 
 ### Added
