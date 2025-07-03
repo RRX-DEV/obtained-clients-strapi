@@ -155,7 +155,11 @@ export interface ComponentsMediaBlock extends Struct.ComponentSchema {
     Image: Schema.Attribute.Media<'images' | 'files'> &
       Schema.Attribute.Required;
     ImagePosition: Schema.Attribute.Enumeration<['Left', 'Right']> &
-      Schema.Attribute.Required;
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<'Left'>;
+    TextAlignment: Schema.Attribute.Enumeration<['Left', 'Right']> &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<'Right'>;
     Title: Schema.Attribute.String & Schema.Attribute.Required;
   };
 }

@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.18] - 2025-06-28
+
+### Added
+- Added `TextAlignment` field to the `Media Block` component, allowing selection between "Left" and "Right" alignment with a default of "Right".
+
+### Changed
+- Set a default value of "Left" for the `ImagePosition` field in the `Media Block` component.
+- Updated TypeScript type definitions to reflect the new and updated fields in the `Media Block` component.
+- Bumped project version to 0.1.18 in `package.json`.
+
 ## [0.1.17] - 2025-06-27
 
 ### Added

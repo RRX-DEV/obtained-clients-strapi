@@ -28,7 +28,17 @@
         "Left",
         "Right"
       ],
-      "required": true
+      "required": true,
+      "default": "Left"
+    },
+    "TextAlignment": {
+      "type": "enumeration",
+      "enum": [
+        "Left",
+        "Right"
+      ],
+      "required": true,
+      "default": "Right"
     }
   }
 }
