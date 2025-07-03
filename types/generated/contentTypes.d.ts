@@ -747,7 +747,16 @@ export interface ApiServiceService extends Struct.CollectionTypeSchema {
   };
   attributes: {
     Color: Schema.Attribute.Enumeration<
-      ['Purple', 'Green', 'Dark Purple', 'Blue', 'Red']
+      [
+        'Red',
+        'Dark_Red',
+        'Deep_Red',
+        'Blue',
+        'Dark_Blue',
+        'Deep_Blue',
+        'Purple',
+        'Dark_Purple',
+      ]
     > &
       Schema.Attribute.Required;
     createdAt: Schema.Attribute.DateTime;

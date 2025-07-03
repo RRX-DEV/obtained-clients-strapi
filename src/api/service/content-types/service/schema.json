@@ -80,11 +80,14 @@
     "Color": {
       "type": "enumeration",
       "enum": [
-        "Purple",
-        "Green",
-        "Dark Purple",
+        "Red",
+        "Dark_Red",
+        "Deep_Red",
         "Blue",
-        "Red"
+        "Dark_Blue",
+        "Deep_Blue",
+        "Purple",
+        "Dark_Purple"
       ],
       "required": true
     }
