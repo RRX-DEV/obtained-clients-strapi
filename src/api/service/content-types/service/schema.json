@@ -90,6 +90,15 @@
         "Dark_Purple"
       ],
       "required": true
+    },
+    "ShortName": {
+      "type": "string",
+      "required": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }

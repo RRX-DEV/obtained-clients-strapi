@@ -131,6 +131,8 @@ export interface ComponentsListTopics extends Struct.ComponentSchema {
     displayName: 'List Topics';
   };
   attributes: {
+    Background: Schema.Attribute.Media<'images' | 'files'> &
+      Schema.Attribute.Required;
     Subtitle: Schema.Attribute.Text;
     Title: Schema.Attribute.String & Schema.Attribute.Required;
     Topics: Schema.Attribute.Component<'singles.topic', true> &

@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.21] - 2025-07-15
+
+### Added
+- Added a `Background` field to the `List Topics` component.
+- Added a `ShortName` field to the `Service` collection type for internal reference and homepage.
+- Updated TypeScript type definitions to reflect the new component and collection type fields.
+
+### Changed
+- Bumped project version to 0.1.21 in `package.json`.
+
 ## [0.1.20] - 2025-07-15
 
 ### Changed

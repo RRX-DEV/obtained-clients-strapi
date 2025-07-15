@@ -19,6 +19,15 @@
       "component": "singles.topic",
       "required": true,
       "min": 1
+    },
+    "Background": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
     }
   }
 }
