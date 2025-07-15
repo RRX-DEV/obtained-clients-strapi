@@ -417,6 +417,7 @@ export interface ApiAboutAbout extends Struct.SingleTypeSchema {
         'components.feature-article',
         'components.article-grid',
         'components.text-block',
+        'components.case-studies',
       ]
     > &
       Schema.Attribute.Required &
@@ -551,6 +552,7 @@ export interface ApiBlogBlog extends Struct.SingleTypeSchema {
         'components.feature-article',
         'components.article-grid',
         'components.text-block',
+        'components.case-studies',
       ]
     > &
       Schema.Attribute.Required &
@@ -650,6 +652,7 @@ export interface ApiHomeHome extends Struct.SingleTypeSchema {
         'components.feature-article',
         'components.article-grid',
         'components.text-block',
+        'components.case-studies',
       ]
     > &
       Schema.Attribute.Required &
@@ -793,6 +796,7 @@ export interface ApiServiceService extends Struct.CollectionTypeSchema {
         'components.feature-article',
         'components.article-grid',
         'components.text-block',
+        'components.case-studies',
       ]
     > &
       Schema.Attribute.Required &

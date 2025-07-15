@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_singles_case_studies",
+  "info": {
+    "displayName": "Case Study",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "Stats": {
+      "type": "component",
+      "repeatable": true,
+      "component": "singles.statistic",
+      "max": 2,
+      "required": false
+    },
+    "Image": {
+      "allowedTypes": [
+        "files",
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

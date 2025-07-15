@@ -30,6 +30,24 @@ export interface ComponentsCardTopics extends Struct.ComponentSchema {
   };
 }
 
+export interface ComponentsCaseStudies extends Struct.ComponentSchema {
+  collectionName: 'components_components_case_studies';
+  info: {
+    displayName: 'Case Studies';
+  };
+  attributes: {
+    List: Schema.Attribute.Component<'singles.case-study', true> &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetMinMax<
+        {
+          max: 3;
+          min: 0;
+        },
+        number
+      >;
+  };
+}
+
 export interface ComponentsContact extends Struct.ComponentSchema {
   collectionName: 'components_components_contacts';
   info: {
@@ -336,6 +354,26 @@ export interface SharedSeo extends Struct.ComponentSchema {
   };
 }
 
+export interface SinglesCaseStudy extends Struct.ComponentSchema {
+  collectionName: 'components_singles_case_studies';
+  info: {
+    description: '';
+    displayName: 'Case Study';
+  };
+  attributes: {
+    Image: Schema.Attribute.Media<'files' | 'images'> &
+      Schema.Attribute.Required;
+    Stats: Schema.Attribute.Component<'singles.statistic', true> &
+      Schema.Attribute.SetMinMax<
+        {
+          max: 2;
+        },
+        number
+      >;
+    Title: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
 export interface SinglesClientReview extends Struct.ComponentSchema {
   collectionName: 'components_singles_client_reviews';
   info: {
@@ -490,6 +528,7 @@ declare module '@strapi/strapi' {
     export interface ComponentSchemas {
       'components.article-grid': ComponentsArticleGrid;
       'components.card-topics': ComponentsCardTopics;
+      'components.case-studies': ComponentsCaseStudies;
       'components.contact': ComponentsContact;
       'components.double-scroll': ComponentsDoubleScroll;
       'components.faq': ComponentsFaq;
@@ -507,6 +546,7 @@ declare module '@strapi/strapi' {
       'components.text-block': ComponentsTextBlock;
       'components.timeline': ComponentsTimeline;
       'shared.seo': SharedSeo;
+      'singles.case-study': SinglesCaseStudy;
       'singles.client-review': SinglesClientReview;
       'singles.faq': SinglesFaq;
       'singles.member-social': SinglesMemberSocial;

@@ -72,7 +72,8 @@
         "components.double-scroll",
         "components.feature-article",
         "components.article-grid",
-        "components.text-block"
+        "components.text-block",
+        "components.case-studies"
       ],
       "required": true,
       "min": 1,

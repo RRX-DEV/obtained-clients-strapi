@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_components_case_studies",
+  "info": {
+    "displayName": "Case Studies"
+  },
+  "options": {},
+  "attributes": {
+    "List": {
+      "type": "component",
+      "repeatable": true,
+      "component": "singles.case-study",
+      "required": true,
+      "min": 0,
+      "max": 3
+    }
+  }
+}
