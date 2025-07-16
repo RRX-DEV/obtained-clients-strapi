@@ -82,6 +82,15 @@
           "localized": true
         }
       }
+    },
+    "TextSwap": {
+      "type": "text",
+      "regex": "(?<big>[a-zA-Z0-9]+)",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }
