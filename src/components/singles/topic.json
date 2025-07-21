@@ -1,7 +1,8 @@
 {
   "collectionName": "components_singles_topics",
   "info": {
-    "displayName": "Topic"
+    "displayName": "Topic",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -13,16 +14,21 @@
       "type": "text"
     },
     "Icon": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
       "allowedTypes": [
         "images",
         "files"
-      ],
-      "type": "media",
-      "multiple": false,
-      "required": true
+      ]
     },
     "Category": {
       "type": "string"
+    },
+    "Link": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::service.service"
     }
   }
 }

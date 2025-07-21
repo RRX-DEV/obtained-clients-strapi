@@ -305,9 +305,11 @@ export interface ComponentsTechStack extends Struct.ComponentSchema {
 export interface ComponentsTextBlock extends Struct.ComponentSchema {
   collectionName: 'components_components_text_blocks';
   info: {
+    description: '';
     displayName: 'Text Block';
   };
   attributes: {
+    CTA: Schema.Attribute.Component<'singles.button', false>;
     Description: Schema.Attribute.Text;
     Title: Schema.Attribute.String & Schema.Attribute.Required;
   };
@@ -351,6 +353,18 @@ export interface SharedSeo extends Struct.ComponentSchema {
       Schema.Attribute.SetMinMaxLength<{
         maxLength: 70;
       }>;
+  };
+}
+
+export interface SinglesButton extends Struct.ComponentSchema {
+  collectionName: 'components_singles_buttons';
+  info: {
+    description: '';
+    displayName: 'Button';
+  };
+  attributes: {
+    Link: Schema.Attribute.Relation<'oneToOne', 'api::service.service'>;
+    Text: Schema.Attribute.String & Schema.Attribute.Required;
   };
 }
 
@@ -512,6 +526,7 @@ export interface SinglesTimelineItem extends Struct.ComponentSchema {
 export interface SinglesTopic extends Struct.ComponentSchema {
   collectionName: 'components_singles_topics';
   info: {
+    description: '';
     displayName: 'Topic';
   };
   attributes: {
@@ -519,6 +534,7 @@ export interface SinglesTopic extends Struct.ComponentSchema {
     Description: Schema.Attribute.Text;
     Icon: Schema.Attribute.Media<'images' | 'files'> &
       Schema.Attribute.Required;
+    Link: Schema.Attribute.Relation<'oneToOne', 'api::service.service'>;
     Title: Schema.Attribute.String & Schema.Attribute.Required;
   };
 }
@@ -546,6 +562,7 @@ declare module '@strapi/strapi' {
       'components.text-block': ComponentsTextBlock;
       'components.timeline': ComponentsTimeline;
       'shared.seo': SharedSeo;
+      'singles.button': SinglesButton;
       'singles.case-study': SinglesCaseStudy;
       'singles.client-review': SinglesClientReview;
       'singles.faq': SinglesFaq;

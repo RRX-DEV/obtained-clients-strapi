@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_singles_buttons",
+  "info": {
+    "displayName": "Button",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Text": {
+      "type": "string",
+      "required": true
+    },
+    "Link": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::service.service"
+    }
+  }
+}
