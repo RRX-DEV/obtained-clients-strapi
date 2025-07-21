@@ -21,12 +21,28 @@
       "min": 1
     },
     "Background": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
       "allowedTypes": [
         "images",
         "files"
+      ]
+    },
+    "BackgroundAlignment": {
+      "type": "enumeration",
+      "enum": [
+        "Top Left",
+        "Top",
+        "Top Right",
+        "Left",
+        "Center",
+        "Right",
+        "Bottom Left",
+        "Botom",
+        "Bottom Right"
       ],
-      "type": "media",
-      "multiple": false,
+      "default": "Center",
       "required": true
     }
   }

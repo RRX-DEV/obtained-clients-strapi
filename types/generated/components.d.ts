@@ -151,6 +151,21 @@ export interface ComponentsListTopics extends Struct.ComponentSchema {
   attributes: {
     Background: Schema.Attribute.Media<'images' | 'files'> &
       Schema.Attribute.Required;
+    BackgroundAlignment: Schema.Attribute.Enumeration<
+      [
+        'Top Left',
+        'Top',
+        'Top Right',
+        'Left',
+        'Center',
+        'Right',
+        'Bottom Left',
+        'Botom',
+        'Bottom Right',
+      ]
+    > &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<'Center'>;
     Subtitle: Schema.Attribute.Text;
     Title: Schema.Attribute.String & Schema.Attribute.Required;
     Topics: Schema.Attribute.Component<'singles.topic', true> &
