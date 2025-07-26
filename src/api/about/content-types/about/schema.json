@@ -82,6 +82,14 @@
           "localized": true
         }
       }
+    },
+    "FloatingImage": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

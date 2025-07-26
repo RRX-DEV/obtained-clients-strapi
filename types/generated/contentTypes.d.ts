@@ -395,6 +395,7 @@ export interface ApiAboutAbout extends Struct.SingleTypeSchema {
           localized: true;
         };
       }>;
+    FloatingImage: Schema.Attribute.Media<'images' | 'files'>;
     locale: Schema.Attribute.String;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::about.about'>;
     PageLayout: Schema.Attribute.DynamicZone<
@@ -529,6 +530,7 @@ export interface ApiBlogBlog extends Struct.SingleTypeSchema {
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     CTAButton: Schema.Attribute.String;
+    FloatingImage: Schema.Attribute.Media<'images' | 'files'>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::blog.blog'> &
       Schema.Attribute.Private;
@@ -630,6 +632,7 @@ export interface ApiHomeHome extends Struct.SingleTypeSchema {
           localized: true;
         };
       }>;
+    FloatingImage: Schema.Attribute.Media<'images' | 'files'>;
     locale: Schema.Attribute.String;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::home.home'>;
     PageLayout: Schema.Attribute.DynamicZone<
@@ -777,6 +780,7 @@ export interface ApiServiceService extends Struct.CollectionTypeSchema {
           localized: true;
         };
       }>;
+    FloatingImage: Schema.Attribute.Media<'files' | 'images'>;
     locale: Schema.Attribute.String;
     localizations: Schema.Attribute.Relation<
       'oneToMany',

@@ -51,6 +51,14 @@
       ],
       "required": true,
       "min": 1
+    },
+    "FloatingImage": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
